@@ -10,12 +10,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.concurrent.TimeUnit;
 
 
-public class LoginPage {
+public class CalcualtorPage {
 
     public WebDriver webDriver;
     WebDriverWait webDriverWait;
 
-    public LoginPage(WebDriver rdriver) {
+    public CalcualtorPage(WebDriver rdriver) {
         webDriver = rdriver;
         webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         webDriver.manage().window().maximize();
@@ -39,31 +39,31 @@ public class LoginPage {
     @CacheLookup
     WebElement lnkLogout;
 
-    public LoginPage setUsername(String username) {
+    public CalcualtorPage one(String username) {
         txtEmail.clear();
         txtEmail.sendKeys(username);
         return this;
     }
 
 
-    public LoginPage setPassword(String password) {
+    public CalcualtorPage two(String password) {
         txtPassword.clear();
         txtPassword.sendKeys(password);
         return this;
     }
 
-    public LoginPage clickLogin(){
+    public CalcualtorPage equal(){
         btnLogin.click();
         return this;
     }
 
-    public LoginPage clickLogout(){
+    public CalcualtorPage clickLogout(){
         lnkLogout.click();
         return this;
     }
 
 
-    public String getPageTitle(){
+    public String getResult(){
         return webDriver.getTitle();
     }
 
