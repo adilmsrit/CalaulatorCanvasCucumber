@@ -1,4 +1,4 @@
-Feature: Login
+Feature: Clear, Addition and Subtraction.
 
   Scenario : Successful validate Addition for all possible scenarios.
     Given User launches chrome browser
