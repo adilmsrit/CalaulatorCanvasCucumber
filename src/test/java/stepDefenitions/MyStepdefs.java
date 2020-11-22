@@ -52,8 +52,8 @@ public class MyStepdefs {
         actions.moveToElement(canvas, 0, 0).moveByOffset(-(174 / 5) * 4, (255 / 6) * 3).click().build().perform();
     }
 
-    @When("Click on {string}")
-    public void clickOnResult(String str) {
+    @When("Click on equal")
+    public void clickOnResult() {
         actions.moveToElement(canvas, 0, 0).moveByOffset((174 / 5) * 4, (255 / 6) * 4).click().build().perform();
     }
 

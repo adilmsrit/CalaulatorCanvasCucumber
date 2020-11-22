@@ -27,8 +27,8 @@ Feature: Login
     Given User launches chrome browser
     When User opens "https://www.online-calculator.com/full-screen-calculator/" URL
     And User Subtracts 2 numbers "<Number1>" and "<Number2>"
-    And Click on "<Result>"
-    Then Result should be "5"
+    And Click on equal
+    Then Result should be "<Result>"
     And Close Browser
     Examples:
       | Number1 | Number2 | Result  |
