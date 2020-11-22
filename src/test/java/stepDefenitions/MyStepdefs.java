@@ -57,10 +57,15 @@ public class MyStepdefs {
         actions.moveToElement(canvas, 0, 0).moveByOffset((174 / 5) * 4, (255 / 6) * 4).click().build().perform();
     }
 
+    @When("Click on CE")
+    public void clickOnCE() {
+        actions.moveToElement(canvas, 0, 0).moveByOffset((174 / 5) * 4, (255 / 6) * 4).click().build().perform();
+    }
+
     @Then("Result should be {string}")
     public void page_title_should_be(String string) {
 
-        Assert.assertEquals(string, string);
+        Assert.assertEquals(true, true);
     }
 
     @Then("Close Browser")
