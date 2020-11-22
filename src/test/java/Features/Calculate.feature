@@ -1,6 +1,6 @@
 Feature: Clear, Addition and Subtraction.
 
-  Scenario : Successful validate Addition for all possible scenarios.
+  Scenario: Validate function of CE button.
     Given User launches chrome browser
     When User opens "https://www.online-calculator.com/full-screen-calculator/" URL
     And Click on CE
@@ -23,7 +23,7 @@ Feature: Clear, Addition and Subtraction.
       | 20000   | 30000   | 50000  |
 
 
-  Scenario Outline: Successful validate Addition for all possible scenarios.
+  Scenario Outline: Successful validate Subtraction for all possible scenarios.
     Given User launches chrome browser
     When User opens "https://www.online-calculator.com/full-screen-calculator/" URL
     And User Subtracts 2 numbers "<Number1>" and "<Number2>"
